@@ -36,20 +36,20 @@ backend/.rvmrc
 
 
 
-frontend/dist
-frontend/tmp
-frontend/out-tsc
+viet-toiec/dist
+viet-toiec/tmp
+viet-toiec/out-tsc
 
 # dependencies
-frontend/node_modules
+viet-toiec/node_modules
 
 # IDEs and editors
-frontend/.idea
-frontend/.project
-frontend/.classpath
-frontend/.c9/
-frontend/*.launch
-frontend/.settings/
+viet-toiec/.idea
+viet-toiec/.project
+viet-toiec/.classpath
+viet-toiec/.c9/
+viet-toiec/*.launch
+viet-toiec/.settings/
 
 
 
