@@ -1,0 +1,22 @@
+# Ignore bundler config.
+/.bundle
+/vendor/bundle
+
+# Ignore all logfiles and tempfiles.
+/log/*
+/tmp/*
+*.log
+
+.byebug_history
+
+# Ignore files in /public/
+/public/*
+
+# sql data
+/db/mysql_data/
+
+# compiled output
+viet-toiec/node_modules/
+viet-toiec/src/
+viet-toiec/dist/
+viet-toiec/tmp
