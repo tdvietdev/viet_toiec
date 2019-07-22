@@ -1,0 +1,23 @@
+version: '3'
+
+networks:
+  viet_toiec:
+
+services:
+  frontend:
+    build:
+      context: ../
+      dockerfile: .docker/Dockerfile_Client
+    container_name: portfolio_frontend
+    volumes:
+      - ../frontend/src:/myapp/src
+    ports:
+      - 4200:4200
+    networks:
+      - viet_toiec
+
+    environment:
+      DB_SERVERNAME: db
+      REDIS_SERVERNAME: redis://redis
+      ELASTICSEARCH_URL: http://esearch:9200
+      RAILS_ENV: development
