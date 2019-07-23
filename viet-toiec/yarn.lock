@@ -627,6 +627,13 @@ amdefine@>=0.0.4:
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
   integrity sha1-SlKCrBZHKek2Gbz9OtFR+BfOkfU=
 
+angular2-token@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/angular2-token/-/angular2-token-0.2.0.tgz#aa6cbf417920000cc37ccbfd1a3cb6ac390092b5"
+  integrity sha512-GUVo6PCllkm1L29t09yULJrIUH3uOCSBTYPcUul3FpuPvKVpSw/9Qh3HIuB6DpmHD0VTtH/Ybviu2XEtqjnPjw==
+  dependencies:
+    tslib "^1.9.0"
+
 ansi-colors@^3.0.0:
   version "3.2.4"
   resolved "https://registry.yarnpkg.com/ansi-colors/-/ansi-colors-3.2.4.tgz#e3a3da4bfbae6c86a9c285625de124a234026fbf"
