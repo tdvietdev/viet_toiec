@@ -11,6 +11,9 @@ import { PageContentComponent } from './components/layout/page-content/page-cont
 import { PageFooterComponent } from './components/layout/page-footer/page-footer.component';
 import { LayoutComponent } from './components/layout/layout.component';
 
+import { Angular2TokenService } from 'angular2-token';
+import { HttpModule } from '@angular/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,13 +23,14 @@ import { LayoutComponent } from './components/layout/layout.component';
     LayoutComponent
   ],
   imports: [
+    HttpModule,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
     MaterialModule
   ],
-  providers: [],
+  providers: [Angular2TokenService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
