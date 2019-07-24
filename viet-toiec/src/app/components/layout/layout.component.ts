@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Angular2TokenService} from 'angular2-token';
 
 @Component({
   selector: 'app-layout',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LayoutComponent implements OnInit {
 
-  constructor() { }
+  constructor(authService: Angular2TokenService) { }
 
   ngOnInit() {
   }

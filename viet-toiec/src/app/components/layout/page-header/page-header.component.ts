@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Angular2TokenService } from 'angular2-token';
 
 @Component({
   selector: 'app-page-header',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PageHeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(public authService: Angular2TokenService) { }
 
   ngOnInit() {
   }
