@@ -10,6 +10,7 @@ import { PageHeaderComponent } from './components/layout/page-header/page-header
 import { PageContentComponent } from './components/layout/page-content/page-content.component';
 import { PageFooterComponent } from './components/layout/page-footer/page-footer.component';
 import { LayoutComponent } from './components/layout/layout.component';
+import { UserAuthModule } from './components/user-auth/user-auth.module';
 
 import { Angular2TokenService } from 'angular2-token';
 import { HttpModule } from '@angular/http';
@@ -28,7 +29,8 @@ import { HttpModule } from '@angular/http';
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    UserAuthModule
   ],
   providers: [Angular2TokenService],
   bootstrap: [AppComponent]
