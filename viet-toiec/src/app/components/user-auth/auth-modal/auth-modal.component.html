@@ -1,3 +1,2 @@
-<p>
-  auth-modal works!
-</p>
+<app-login-form *ngIf="isLoginFrom"></app-login-form>
+<app-register-form *ngIf="!isLoginFrom"></app-register-form>

@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
 import { AuthModalComponent } from './auth-modal/auth-modal.component';
 import { LoginFormComponent } from './login-form/login-form.component';
 import { RegisterFormComponent } from './register-form/register-form.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -10,12 +12,21 @@ import { RegisterFormComponent } from './register-form/register-form.component';
     LoginFormComponent,
     RegisterFormComponent
   ],
+  imports: [
+    CommonModule,
+    FormsModule
+  ],
+  entryComponents: [AuthModalComponent],
 
   exports: [
+    FormsModule,
     AuthModalComponent,
     LoginFormComponent,
     RegisterFormComponent
   ],
-  providers: [],
+  providers: [
+    // BsModalService,
+    // BsModalRef,
+  ],
 })
 export class UserAuthModule { }
