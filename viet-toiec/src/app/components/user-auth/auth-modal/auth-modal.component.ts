@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BsModalRef } from 'ngx-bootstrap/modal';
 
 @Component({
   selector: 'app-auth-modal',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AuthModalComponent implements OnInit {
 
-  constructor() { }
+  isLoginFrom = true;
+
+  constructor(public bsModalRef: BsModalRef) {}
 
   ngOnInit() {
   }
